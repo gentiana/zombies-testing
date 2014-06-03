@@ -1,0 +1,9 @@
+%h1= @zombie.name + '123'
+
+%p
+  %b Graveyard:
+  = @zombie.graveyard
+
+= link_to 'Edit', edit_zombie_path(@zombie)
+\|
+= link_to 'Back', zombies_path

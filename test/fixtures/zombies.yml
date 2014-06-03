@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  name: MyString
+  graveyard: MyString
+
+two:
+  id: 2
+  name: MyString
+  graveyard: MyString
+
+ala:
+  id: 3
+  name: Ala
+  graveyard: ala123
+
+tim:
+  id: 4
+  name: Tim
+  graveyard: Green Meadows

@@ -1,0 +1,16 @@
+= form_for @zombie do |f|
+  - if @zombie.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@zombie.errors.count, "error")} prohibited this zombie from being saved:"
+      %ul
+        - @zombie.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :graveyard
+    = f.text_field :graveyard
+  .actions
+    = f.submit submit_txt

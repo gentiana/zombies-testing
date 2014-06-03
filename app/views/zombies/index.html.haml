@@ -1,0 +1,21 @@
+%h1 Listing zombies
+
+%table
+  %tr
+    %th Name
+    %th Graveyard
+    %th
+    %th
+    %th
+
+  - @zombies.each do |zombie|
+    %tr
+      %td= zombie.name
+      %td= zombie.graveyard
+      %td= link_to 'Show', zombie
+      %td= link_to 'Edit', edit_zombie_path(zombie)
+      %td= link_to 'Destroy', zombie, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Zombie', new_zombie_path

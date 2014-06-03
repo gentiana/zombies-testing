@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @weapon.name
+%p
+  %b Ammo:
+  = @weapon.ammo
+%p
+  %b Zombie:
+  = @weapon.zombie_id
+
+= link_to 'Edit', edit_weapon_path(@weapon)
+\|
+= link_to 'Back', weapons_path

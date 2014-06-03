@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Status:
+  = @tweet.status
+%p
+  %b Zombie:
+  = @tweet.zombie_id
+
+= link_to 'Edit', edit_tweet_path(@tweet)
+\|
+= link_to 'Back', tweets_path

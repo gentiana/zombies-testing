@@ -1,0 +1,8 @@
+= div_for tweet do
+  = tweet.status
+  %br
+  by 
+  = link_to tweet.zombie.name, tweet.zombie
+  .actions
+    = link_to 'edit', edit_tweet_path(tweet)
+    = link_to 'delete', tweet, method: :delete, remote: true
